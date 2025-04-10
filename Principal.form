@@ -1,0 +1,50 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { txtA TextBox
+    MoveScaled(28,4,24,4)
+    Text = ("0")
+  }
+  { txtB TextBox
+    MoveScaled(28,12,24,4)
+    Text = ("0")
+  }
+  { txtC TextBox
+    MoveScaled(28,20,24,4)
+    Text = ("0")
+  }
+  { txtX TextBox
+    MoveScaled(28,32,24,4)
+    Text = ("0")
+  }
+  { txtY TextBox
+    MoveScaled(28,52,24,4)
+    Text = ("0")
+    ReadOnly = True
+  }
+  { Label1 Label
+    MoveScaled(4,4,24,4)
+    Text = ("Coeficiente a")
+  }
+  { Label2 Label
+    MoveScaled(4,12,24,4)
+    Text = ("Coeficiente b")
+  }
+  { Label3 Label
+    MoveScaled(4,20,24,4)
+    Text = ("Coeficiente c")
+  }
+  { Label4 Label
+    MoveScaled(4,32,24,4)
+    Text = ("Valor de x")
+  }
+  { Label5 Label
+    MoveScaled(4,52,24,4)
+    Text = ("Valor de y")
+  }
+  { btnCalcular Button
+    MoveScaled(20,42,16,4)
+    Text = ("Calcular")
+  }
+}

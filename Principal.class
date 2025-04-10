@@ -1,0 +1,101 @@
+' Gambas class file
+
+Public Sub txtA_Change()
+  Dim valor As Float
+  If txtA.Text = "-" Or IsNumber(txtA.Text) Then
+    If txtA.Text = "-" Then
+      
+    Else
+      valor = Val(txtA.Text)
+    Endif
+  Else
+    If txtA.Text = ""
+      valor = 0
+    Else
+      Message.Error("Solo se permiten números.")
+      txtA.Text = ""
+    Endif
+  Endif
+  
+  'print(textA) 
+End
+
+Public Sub txtB_Change()
+  
+  Dim valor As Float
+  If txtB.Text = "-" Or IsNumber(txtB.Text) Then
+    If txtB.Text = "-" Then
+      
+    Else
+      valor = Val(txtB.Text)
+    Endif
+  Else If txtB.Text = ""
+    valor = 0
+  Else
+    Message.Error("Solo se permiten números.")
+    txtB.Text = ""  
+  Endif
+  
+  'print(textB) 
+
+End
+
+Public Sub txtC_Change()
+  
+  Dim valor As Float
+  If txtC.Text = "-" Or IsNumber(txtC.Text) Then
+    If txtC.Text = "-" Then
+      
+    Else
+      valor = Val(txtC.Text)
+    Endif
+  Else If txtC.Text = ""
+    valor = 0
+  Else
+    Message.Error("Solo se permiten números.")
+    txtC.Text = ""
+  Endif
+
+  'print(textC) 
+
+End
+
+
+Public Sub txtX_Change()
+  
+  Dim valor As Float
+  If txtX.Text = "-" Or IsNumber(txtX.Text) Then
+    If txtX.Text = "-" Then
+      
+    Else
+      valor = Val(txtX.Text)
+    Endif
+  Else If txtX.Text = ""
+    valor = 0
+  Else
+    Message.Error("Solo se permiten números.")
+    txtX.Text = ""
+  Endif
+  
+
+End
+
+Public Sub btnCalcular_Click()
+  
+  Dim textA, textB, textC, textX, textY As Float
+  
+  textA = Val(txtA.Text) 
+  textB = Val(txtB.Text) 
+  textC = Val(txtC.Text)
+  textX = Val(txtX.Text)
+
+
+  textY = textA * textX * textX + textB * textX + textC
+  txtY.Text = CString(textY)
+End
+
+Public Sub txtA_KeyPress()
+
+  
+
+End
